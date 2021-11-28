@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+#backimg {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+  background-repeat: no-repeat;
+}
+#stars {
+  background-image: url(https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png);
+}
+
+header {
+  display: flex;
+  position: static;
+  float: none;
+}
+
+.navbar {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.navbar__top {
+  background-color: #131921;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.logo {
+  background-position-x: -10px;
+  background-position-y: -51px;
+  width: 100px;
+  height: 30px;
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+.nav__logo {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+.navbar__location {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  display: flex;
+  padding: 0 1rem;
+}
+.navbar__location__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.locationSign {
+  background-position-x: -71px;
+  background-position-y: -378px;
+  width: 1rem;
+  height: 1.3rem;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: row;
+}
+.navbar__location__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.searching {
+  display: flex;
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: 2rem;
+}
+
+.searchbar {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.searchbar__left {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: column;
+  width: 2.45rem;
+  position: relative;
+}
+
+.searchbar__aps {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.searchbar__fill {
+  position: relative;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.searchbar__fill input {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  border: none;
+}
+
+.searchicon {
+  width: 2.5rem;
+  background-color: #f3a847;
+  background-position-x: 2px;
+  background-position-y: -278px;
+}
+.rigthtopbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.language {
+  margin: 0 0.1rem;
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: transparent 1px solid;
+}
+.language:hover {
+  border: azure 1px solid;
+}
+.language__img {
+  width: 1rem;
+  height: 1rem;
+  background-position-x: 0;
+  background-position-y: -130px;
+  background-image: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
+}
+.user {
+  border: transparent 1px solid;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+.user:hover {
+  border: azure 1px solid;
+}
+.user__titles {
+  text-decoration: none;
+  font-size: 0.75rem;
+  background-color: #131921;
+  color: white;
+}
+.orders {
+  border: transparent 1px solid;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+.orders:hover {
+  border: azure 1px solid;
+}
+.cart {
+  border: transparent 1px solid;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  color: white;
+}
+.cart:hover {
+  border: azure 1px solid;
+}
+.cartpic {
+  width: 2rem;
+  height: 1.3rem;
+  background-position-x: -10px;
+  background-position-y: -340px;
+}
+.navbar__bottom {
+  background-color: #232f3e;
+  height: 1.8rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.navbar__bottom a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  border: transparent 1px solid;
+}
+.navbar__bottom a:hover {
+  border: azure 1px solid;
+}
+
+.allbuttom {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0.3rem 0.5rem;
+  border: transparent 1px solid;
+}
+.allbuttom:hover {
+  border: azure 1px solid;
+}
+.allbuttom a {
+  padding-left: 0;
+  padding: 0;
+}
+.allbuttom a:hover {
+  border: transparent 1px solid;
+}
+.allbuttom__sign {
+  background-position-x: -172px;
+  background-position-y: -255px;
+  width: 1.2rem;
+  height: 1rem;
+}
+.cyberdeals {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 1550px;
+  font-size: 0.75rem;
+  line-height: 1.14rem;
+}
+.pics {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.pics__container {
+  flex-direction: row;
+  padding-left: 40px;
+  display: flex;
+  padding: 2rem;
+}
+.smallpics {
+  width: 2.4rem;
+  border: 2px solid transparent;
+}
+.smallpics li:hover {
+  border: 2px solid #f08804;
+}
+.mainpiccon {
+  position: relative;
+  min-width: 420px;
+  min-height: 430px;
+}
+.mainpic {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.smallpics li {
+  list-style: none;
+}
+
+.description {
+  line-height: 1.4rem;
+  font-weight: 400;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.storelink {
+  text-decoration: none;
+  color: #007185;
+}
+.ratingcontainer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid gainsboro;
+}
+.ratingcontainer > div {
+  padding: 0 0.8rem;
+}
+.itemstars {
+  background-position-x: -84px;
+  background-position-y: -28px;
+  height: 1rem;
+  width: 4rem;
+}
+.rating {
+  border-right: 2px solid gainsboro;
+  color: #007185;
+}
+.ansqes {
+  color: #007185;
+}
+tr {
+  border: 2px solid black;
+}
+.pricedes__freeship {
+  padding-top: 0.5rem;
+}
+.mousecolors {
+  padding: 1rem 0;
+}
+.mousecolors__list {
+  list-style: none;
+}
+.mousecolors__list li {
+  display: inline-block;
+  position: relative;
+  margin: 0 0.1rem;
+}
+
+.mousecolors__list li button {
+  border: 2px solid ghostwhite;
+  border-radius: 0;
+}
+.mousecolors__list li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+}
+.maindetails table {
+  width: 50%;
+}
+.maindetails {
+  font-size: 0.8rem;
+}
+
+.aboutitem {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.65rem;
+  line-height: 1.2rem;
+}
+
+.boxgroup {
+  width: 860px;
+  height: 80%;
+  margin: 0 3rem;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(215, 215, 221);
+  border-radius: 10px;
+}
+.boxgroup div {
+  padding: 5px;
+  margin: 2px 0;
+}
+.boxgroup__price {
+  color: #b1271c;
+  font-size: 1rem;
+}
+.boxgroup__fees {
+  font-size: 0.7rem;
+}
+.boxgroup__fees a {
+  text-decoration: none;
+  color: #007185;
+}
+.boxgroup__shipping {
+  font-size: 0.7rem;
+}
+.boxgroup__location {
+  display: flex;
+  font-size: 0.7rem;
+}
+.boxgroup__location img {
+  height: 14px;
+  min-width: 14px;
+  margin-right: 5px;
+}
+
+.boxgroup__location a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 0.62rem;
+}
+.boxgroup__stock {
+  color: #007600;
+  font-size: 1rem;
+}
+.boxgroup__qty select {
+  border-radius: 7px;
+  background-color: gainsboro;
+  font-size: 0.62rem;
+  text-align: center;
+  width: 3.3rem;
+  height: 1.1rem;
+}
+.boxgroup__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.boxgroup__buttons button {
+  text-align: center;
+  margin: 0.2rem 0;
+  border-radius: 50px;
+  border: none;
+  height: 1.7rem;
+}
+.cart1 {
+  background-color: #f7ca00;
+}
+.buy {
+  background-color: #fa8900;
+}
+
+.boxgroup__secure {
+  display: flex;
+}
+.boxgroup__secure img {
+  padding-right: 0.5rem;
+  height: 16px;
+}
+.boxgroup__secure a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 0.7rem;
+}
+.boxgroup__seller {
+  display: flex;
+  border-bottom: 1px solid rgb(202, 202, 207);
+}
+
+.boxgroup__sellertable td {
+  padding: 0 5px;
+  font-size: 0.6rem;
+  line-height: 18px;
+}
+.boxgroup__details a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 0.7rem;
+}
+.boxgroup__return {
+  font-size: 0.7rem;
+}
+
+.boxgroup__return a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 0.7rem;
+}
+
+.boxgroup__gift {
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgb(202, 202, 207);
+}
+.boxgroup__list {
+}
+.boxgroup__list select {
+  margin: 0.2rem 0;
+  width: 100%;
+  height: 1.5rem;
+  background-color: gainsboro;
+  border: none;
+  border-radius: 2px;
+}
